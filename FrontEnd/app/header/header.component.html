@@ -1,0 +1,129 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="assets/Images/d1.png " width="150px" height="100px">
+    <div style="text-align: center;" class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ">
+            <div class="ontop">
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/adminreg"  ><strong>sign up</strong></a>
+                </li>
+            </div>
+            <div class="ontop">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/adminlogin" ><strong>sign in</strong></a>
+                </li>
+            </div>
+
+            <li class="nav-item active" >
+                <a class="nav-link" routerLink="/header" style="text-decoration: 1px rgb(252, 0, 138);">Home </a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" routerLink="/admin">About us</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" routerLink="/header">Careers</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" routerLink="/header">Contacts</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" routerLink="/header">terms</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" routerLink="/header">Faqs</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" routerLink="/header">Blog</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" routerLink="/header">Doctor blog</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<section>
+
+    <div class="row">
+        <div class="column1">
+            <b><img src="assets/Images/e2.png" alt="book my doc" style="width:80%"></b>
+            <h5 style="color: rgb(252, 0, 138);">I'm a new patient</h5>
+            <em>
+                <p class="size">Find a doctor and book<br> an appointment</p>
+            </em>
+            <em>
+                <p class="size">Online for free!</p>
+            </em>
+            <div>
+                <button style="background-color: rgb(252, 0, 138);" type="button" (click)="patientlogin()">join now</button>
+            </div>
+        </div>
+        <div class="vl"></div>
+
+        <div class="column2">
+            <img src="assets/Images/e1.jpg" alt="Forest" style="width:60%">
+            <h5 style="color: rgb(252, 0, 138);">I'm a new doctor/health care provider</h5>
+            <em>
+                <p class="size">Quicker way for your patient to schedule<br> an appointment.</p>
+            </em>
+            <em>
+                <p class="size">Online for free!</p>
+            </em>
+            <div>
+                <button style="background-color: rgb(252, 0, 138);" type="button" (click)="doctorlogin()">join now</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-1">
+        <ul class="nav justify-content-center">
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#" style="color: white;">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Careers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">terms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Faqs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">Doctor blog</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-2">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" style="color: white;" href="#">Our Location</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">Search By</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">Cities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">Address</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<router-outlet></router-outlet>

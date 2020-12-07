@@ -1,0 +1,35 @@
+.column1{
+    margin-left: 600px;
+    margin-top: 100px;
+    float: right;
+}
+.column2{
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.vl {
+border-left: 1px solid black ;
+height: 400px;
+position: absolute;
+left: 45%;
+margin-left: 50px;
+margin-right: 50px;
+top: 210px;
+}
+/* .top{
+vertical-align:center;
+} */
+.size{
+    color:rgb(252, 0, 138); 
+
+}
+.navbar{
+    background-color: cornsilk;
+}
+
+.footer{
+    background-color:rgb(252, 0, 138); 
+    margin-top: 50px;
+    
+}

@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="assets/Images/d1.png " width="150px" height="100px">
+    <div style="text-align: center;" class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+       
+        <ul class="navbar-nav ">
+       
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/header" style="text-decoration: 1px rgb(252, 0, 138);">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">Careers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">terms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">Faqs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">Doctor blog</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+
+
+<div class="col-md-5 offset-4 mt-4 card-group">
+    <div class="card">
+        <div class="card-body">
+            <h4 id="btnclr" class="card-title"><u>Doctor SIGN IN</u></h4>
+            <form [formGroup]="loginGroup">
+                <div class="form">
+                    <div class="form-group">
+                        <input type="text" name="idno" class="form-control" placeholder="idno" 
+                            formControlName="idno">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Password" class="form-control" 
+                            formControlName="password">
+                    </div>
+                    <div class="form-group">
+                        <a routerLink="#" id="btnclr">Forgot your Password?</a>
+                    </div>
+                    <div>
+                        <button type="submit" (click)="submit()" class="btn btn-primary">Login</button>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body" style="background-color: rgb(252, 0, 138); margin:25px">
+            <h5 class="card-title">I'm new in Bookmydoc</h5>
+            <p class="card-text">Signup for a book my doc account to book an appointment rightnow!</p>
+            <a routerLink="/doctorreg">Sign up Now!</a>
+        </div>
+    </div>
+</div>

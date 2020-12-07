@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="assets/Images/d1.png " width="150px" height="100px">
+    <div style="text-align: center;" class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+
+        <ul class="navbar-nav ">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/header" >Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">Careers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">terms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">Faqs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/header">Doctor blog</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="color">
+    <form [formGroup]="regGroup" action="#" method="GET">
+        <div class="card col-sm-6 offset-sm-3 mt-2">
+            <div class="card-body m-3 ">
+                <div class="offset-3">
+                    <h1 style="text-align: center;" style="color: black;"><u>Admin Registration</u></h1>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" name="username" placeholder="Please Enter Name"
+                        formControlName="username">
+                </div>
+                <div class="form-group">
+                    <label for="idno">ID no:</label>
+                    <input type="text" class="form-control" name="idno" placeholder="Please Enter idno"
+                        formControlName="idno">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" name="email" placeholder="Please Enter Your Email"
+                        formControlName="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Please Enter Your password"
+                        formControlName="password">
+                </div>
+                <div class="form-group">
+                    <label for="mobilenumber">Mobile Number</label>
+                    <input type="number" class="form-control" name="mobile"
+                        placeholder="Please Enter Your mobile number" formControlName="mobile">
+                </div>
+                <button type="submit" class="btn btn-outline-success btn-block" (click)="submit()">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
